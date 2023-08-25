@@ -1,0 +1,7 @@
+print("Введите вид животного:")
+animal = input()
+print("Введите кличку:")
+name = input()
+print("Введите возраст:")
+age = input()
+print("Это %s по кличке \"%s\". Возвраст: %s года" %(animal, name, age))
