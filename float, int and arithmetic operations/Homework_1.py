@@ -1,2 +1,2 @@
-a, b = map(int, input().split())
-print("Площадь: %d. Периметр: %d" %(a*b, 2*(a+b)))
+a, b = map(float, input().split())
+print(f"Площадь: {a * b}. Периметр: {2 * (a + b)}")
