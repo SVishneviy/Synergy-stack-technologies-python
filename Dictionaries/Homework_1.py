@@ -1,7 +1,7 @@
-def declination(n):
-    if pet['age'] % 10 == 1 and pet['age'] % 100 != 11:
+def get_declination(age):
+    if age % 10 == 1 and age % 100 != 11:
         return "год"
-    elif pet['age'] in [2, 3, 4] and not (pet['age'] in [12, 13, 14]):
+    elif age in [2, 3, 4] and not (age in [12, 13, 14]):
         return "года"
     else:
         return "лет"
@@ -17,5 +17,5 @@ for i in range(n):
 for k in pets.keys():
     pet = pets.get(k)
     print(f"Это {pet['animal']} по кличке \"{k}\". "
-          f"Возраст животного: {pet['age']} {declination(pet['age'])}. "
+          f"Возраст животного: {pet['age']} {get_declination(pet['age'])}. "
           f"Имя владельца: {pet['owner']}")
