@@ -14,7 +14,7 @@ if ((m >= 1 and m <= 10 * (10 ** 6))
     count = res.count(m)
     for i in range(len(res)-1):
         for j in range(i+1, len(res)):
-            if (res[j] + res[i] > m) and (res[j-1] + res[i] <= m):
+            if (res[j] + res[i] >= m) and (res[j-1] + res[i] <= m):
                 count += 1
                 break
     print(f"Нужно лодок: {count}")
