@@ -10,8 +10,5 @@ class Transport:
               f"Скорость: {self.max_speed} "
               f"Пробег: {self.mileage}")
         
-class Autobus(Transport):
-    pass
-
-auto = Autobus("Renault Logan", 180, 12)
-auto.print_attr()
+autobus = Transport("Renault Logan", 180, 12)
+autobus.print_attr()
