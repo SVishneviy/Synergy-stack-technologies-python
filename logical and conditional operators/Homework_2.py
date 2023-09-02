@@ -3,6 +3,7 @@ str = input().lower()
 str1 = str.translate({ord('a') : None, ord('e') : None, ord('i') : None, ord('o') : None, ord('u') : None})
 print(f"Количество гласных: {str.count('a') + str.count('e') + str.count('i') + str.count('o') + str.count('u')}")
 print(f"Количество согласных: {len(str1)}")
+print(f"Общее количество гласных и согласных: {len(str)}")
 if (str.find("a") != -1 and 
     str.find("e") != -1 and 
     str.find("i") != -1 and 
